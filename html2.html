@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Portfolio</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Portfolio.</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Ganesh Innamuri</h1>
+            <p>Computer Science Student|Web developer</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+        <div class="hero-image">
+            <img src="me3.jpeg">
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2 class="section-title">About Me</h2>
+        
+        <div class="about-container">
+            <div class="about-text-box">
+                <p class="about-text">
+                    I am a developer and creator bridging the gap between hardware, software, and business. Whether I am writing algorithmic <strong>Python</strong> scripts, wiring up <strong>laser security circuits</strong> on a breadboard, I love turning complex ideas into reality. 
+                </p>
+                <p class="about-text">
+                    Beyond technical projects, I believe in building with empathy and community in mind—always looking for ways to use my skills to create a positive impact, from tech solutions to organizing care kit drives for essential workers.
+                </p>
+            </div>
+
+            <div class="skills-wrapper">
+                <h3>Core Focus</h3>
+                <div class="skills-grid">
+                    <span class="skill-tag">Python Programming</span>
+                    <span class="skill-tag">UI/UX designer</span>
+                    <span class="skill-tag">OOPS</span>
+                    <span class="skill-tag">Web Development</span>
+                    <span class="skill-tag">Problem Solving</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            
+            <div class="project-card">
+                <h3>Laser Security Alarm</h3>
+                <p>Designed and built a functional home security system utilizing laser tripwires, breadboard circuitry, and buzzer integration.</p>
+                <a href="security.html" class="project-link">View Details &rarr;</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Web developer</h3>
+                <p>Interactive UI/Ux designs</p>
+                <a href="webpage.html" class="project-link">View Details &rarr;</a>
+            </div>
+
+            
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="contact-container">
+            <form action="#" class="contact-form">
+                
+                <div class="input-group">
+                    <input type="text" id="name" required>
+                    <label for="name">Your Name</label>
+                </div>
+                
+                <div class="input-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Your Email</label>
+                </div>
+                
+                <div class="input-group">
+                    <textarea id="message" rows="4" required></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                
+                <button type="submit" class="btn submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
