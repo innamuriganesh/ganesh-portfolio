@@ -1,9 +1,9 @@
-/* --- Global Styles & Variables --- */
+
 :root {
     --bg-color: #fafafa;
     --text-primary: #111111;
     --text-secondary: #555555;
-    --accent-color: #7a1f1f; /* A subtle maroon accent to match your generated photo */
+    --accent-color: #7a1f1f; 
     --card-bg: #ffffff;
     --transition: all 0.3s ease-in-out;
 }
@@ -25,7 +25,7 @@ body {
     line-height: 1.6;
 }
 
-/* --- Navigation --- */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -59,7 +59,7 @@ body {
     transition: var(--transition);
 }
 
-/* Interactive Nav Underline */
+
 .nav-links a::after {
     content: '';
     position: absolute;
@@ -75,7 +75,7 @@ body {
     width: 100%;
 }
 
-/* --- Hero Section --- */
+
 .hero {
     min-height: 100vh;
     display: flex;
@@ -102,10 +102,10 @@ body {
     margin-bottom: 2rem;
 }
 
-/* --- About Section --- */
+
 .about-section {
     padding: 6rem 10%;
-    background-color: var(--card-bg); /* Uses the card background for a subtle alternate row color */
+    background-color: var(--card-bg); 
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
     transition: var(--transition);
@@ -136,7 +136,7 @@ body {
     font-weight: 600;
 }
 
-/* --- Interactive Skill Tags --- */
+
 .skills-wrapper {
     flex: 0.8;
     padding: 2.5rem;
@@ -173,7 +173,7 @@ html:has(#theme-toggle:checked) .skills-wrapper {
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-/* Skill Tag Hover Physics */
+
 .skill-tag:hover {
     background-color: var(--accent-color);
     color: #ffffff;
@@ -182,7 +182,7 @@ html:has(#theme-toggle:checked) .skills-wrapper {
     box-shadow: 0 10px 15px rgba(122, 31, 31, 0.2);
 }
 
-/* --- Responsive Adjustments --- */
+
 @media (max-width: 900px) {
     .about-container {
         flex-direction: column;
@@ -207,7 +207,6 @@ html:has(#theme-toggle:checked) .skills-wrapper {
     box-shadow: 0 30px 50px rgba(0,0,0,0.15);
 }
 
-/* --- Buttons --- */
 .btn {
     display: inline-block;
     padding: 0.8rem 2rem;
@@ -235,7 +234,7 @@ html:has(#theme-toggle:checked) .skills-wrapper {
     color: var(--bg-color);
 }
 
-/* --- Projects Section --- */
+
 .projects-section {
     padding: 5rem 10%;
 }
@@ -262,7 +261,7 @@ html:has(#theme-toggle:checked) .skills-wrapper {
     overflow: hidden;
 }
 
-/* Interactive Card Hover */
+
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 30px rgba(0,0,0,0.05);
@@ -289,11 +288,9 @@ html:has(#theme-toggle:checked) .skills-wrapper {
 }
 
 .project-link:hover {
-    gap: 5px; /* Pushes the arrow slightly to the right */
-}
+    gap: 5px; 
 
-/* --- Contact Section --- */
-/* --- Interactive Contact Form --- */
+}
 .contact-section {
     padding: 6rem 10%;
 }
@@ -320,14 +317,14 @@ html:has(#theme-toggle:checked) .contact-container {
 .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem; /* Spacing between inputs */
+    gap: 2.5rem; 
 }
 
 .input-group {
     position: relative;
 }
 
-/* Base Input Styling */
+
 .input-group input,
 .input-group textarea {
     width: 100%;
@@ -339,22 +336,21 @@ html:has(#theme-toggle:checked) .contact-container {
     border-bottom: 2px solid var(--border-color);
     outline: none;
     transition: var(--transition);
-    resize: none; /* Prevents awkward dragging on the textarea */
+    resize: none; 
 }
 
-/* Floating Label Default State */
+
 .input-group label {
     position: absolute;
     top: 10px;
     left: 0;
     font-size: 1rem;
     color: var(--text-secondary);
-    pointer-events: none; /* Allows clicking "through" the label */
+    pointer-events: none; 
     transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-/* Floating Animation! 
-   Triggers when focused OR when the input is valid (has text in it) */
+
 .input-group input:focus ~ label,
 .input-group input:valid ~ label,
 .input-group textarea:focus ~ label,
@@ -365,13 +361,13 @@ html:has(#theme-toggle:checked) .contact-container {
     font-weight: 600;
 }
 
-/* Border Animation on Focus */
+
 .input-group input:focus,
 .input-group textarea:focus {
     border-bottom-color: var(--accent-color);
 }
 
-/* Submit Button Specifics */
+
 .submit-btn {
     cursor: pointer;
     border: none;
@@ -380,7 +376,7 @@ html:has(#theme-toggle:checked) .contact-container {
     font-size: 1.1rem;
 }
 
-/* --- Footer --- */
+
 footer {
     text-align: center;
     padding: 2rem;
@@ -388,7 +384,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* --- Responsive Design --- */
+
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
@@ -411,6 +407,6 @@ footer {
     }
     
     .nav-links {
-        display: none; /* In a real app, you'd add a hamburger menu here */
+        display: none; 
     }
 }
